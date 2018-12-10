@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log In</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="registerStyle.css">
+    <script src="registerScript.js"></script>
+
+    <style>
+        .spacer {
+    margin-top: 100px; /* define margin as you see fit */
+}</style>
+
+</head>
+
+<body style="background-color: #49D4FB">
+    <div class="container pb-5">
+        <div class="row justify-content-sm-center" style="margin-top: 75px">
+            <div class="col-sm-10 col-md-8">
+                <!-- <div class="card " style="background-color: #49D4FB">
+                    <div class="card-body"> -->
+                <div class="row" style="background-color: white">
+                    <div class="col-md-7 text-center" style="background:url(pictures/cloud_forest1.jpg);
+                            width: 400px;height: 481px;
+                                    background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; ">
+
+                        <h1 class="text-center" style="color: black;margin-top: 150px;">
+                            <strong>ICTAK</strong></h1>
+
+                    </div>
+
+
+                    <div class="col-md-5" id="login" style="display: block;">
+                        <form class="form mt-1">
+                            <h3 class="display-5">Login</h1>
+
+                                <div class="form-group mt-5">
+                                    <label for="usr"><strong>Email</strong></label>
+                                    <input type="email" class="form-control" id="usr" name="email" required autofocus>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="pwd"><strong>Password</strong></label>
+                                    <input type="password" class="form-control" id="pwd" name="password" required>
+                                </div>
+
+
+
+
+
+
+
+                                <button type="submit" class="btn btn-primary btn-block  spacer">Login</button>
+
+                                <button type="submit" class="btn btn-warning btn-block ">Forgot Password?</button>
+
+                                <p>
+                                    Not a member yet ?
+                                    <button type="button" class="btn btn-link" onclick="toggleLogin()">Join us</button>
+                                </p>
+
+                        </form>
+                    </div>
+
+
+                    <div class="col-md-5" id="register" style="display: none">
+                        <form class="form mt-4">
+                            <h3 class="display-5">Register</h1>
+
+                                <div class="form-group mt-3">
+
+                                    <input type="text" class="form-control" id="usr" name="username" placeholder="Full Name"
+                                        required autofocus style="background-color: #EDEDED">
+                                </div>
+
+                                <div class="form-group">
+
+                                    <input type="email" class="form-control input-type-bg" id="email" name="email"
+                                        placeholder="Email" required onblur="checkEmail()">
+                                </div>
+
+                                <div class="form-group ">
+                                    <input type="password" class="form-control input-type-bg" id="password" name="password"
+                                        placeholder="Password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+                                        title="Must contain at least
+                                         one number and one uppercase and lowercase letter,one special character, and at
+                                          least 8 or more characters"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <select class="form-control input-type-bg" id="selectboxGender" required>
+                                        <option value="" selected>Select your gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+
+                                    </select>
+                                </div>
+
+
+                                <div class="form-group row">
+                                    <label class="col-sm-5"><strong>Nationality :</strong> </label>
+                                    <div class="col-sm-7">
+
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label" for="radio1">
+                                                <input type="radio" class="form-check-input" id="radio1" name="optradio"
+                                                    value="option1" required>India
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label" for="radio2">
+                                                <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                                    value="option2">Others
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="agree" value="agree" required />
+                                            I accept the the terms and conditions
+                                        </label>
+                                    </div>
+
+                                </div>
+
+
+
+                                <button type="submit" class="btn btn-primary btn-block
+                                  spacer-register mb-1">Register</button>
+
+                                <p>
+                                    Already a member ?
+                                    <button type="button" class="btn btn-link" onclick="toggleLogin()">Go and log in</button>
+                                </p>
+
+                        </form>
+
+                    </div>
+
+
+
+                </div>
+                <!-- </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

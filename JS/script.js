@@ -24,7 +24,7 @@ function add() {
     var c = parseInt(a) + parseInt(b);
     console.log(c);
 
-    // document.getElementById("result").innerHTML = c;//or below is we can add html
+    // document.getElementById("result").innerHTML = c;//or below is we can add html,add
     document.getElementById("result").innerHTML = "<b>"+c+"</b>";
    // return c;
 }
