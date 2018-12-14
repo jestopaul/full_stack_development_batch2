@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Details</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="hw2Script.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">FISAT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="hw.html">Student Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Mark List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="container-fluid h-100" style="background: wheat">
+        <div class="row justify-content-left align-items-left h-100 pt-5 ml-1">
+            <div class="col col-sm-6 col-md-10 col-lg-8 col-xl-6">
+                <form action="">
+
+
+                    <table class="table table-borderless table-responsive-sm">
+
+                        <tbody>
+                            <tr>
+                                <td>Name</td>
+                                <td>
+                                    <input type="text" class="form-control" id="name">
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Candidate Code</td>
+                                <td>
+                                    <input type="text" class="form-control" id="code">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>College Name</td>
+                                <td>
+                                    <input type="text" class="form-control" id="college">
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Semester</td>
+                                <td>
+                                    <select class="form-control input-type-bg" id="selectboxSemester" required>
+                                        <option value="" selected>Select your semester</option>
+                                        <option value="Sem1">Sem1</option>
+                                        <option value="Sem2">Sem2</option>
+                                        <option value="Sem3">Sem3</option>
+                                        <option value="Sem4">Sem4</option>
+                                        <option value="Sem5">Sem5</option>
+                                        <option value="Sem6">Sem6</option>
+                                        <option value="Sem7">Sem7</option>
+                                        <option value="Sem8">Sem8</option>
+
+                                    </select>
+                                </td>
+
+                            </tr>
+                            <!-- sub1 -->
+
+                            <tr>
+                                <td>Subject1 Name </td>
+                                <td>
+                                    <input type="text" class="form-control" id="sub1">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Subject1 Mark Obtained </td>
+                                <td>
+                                    <input type="number" class="form-control" id="sub1_mark">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Subject1 Total Mark </td>
+                                <td>
+                                    <input type="number" class="form-control" id="sub1_total_mark">
+                                </td>
+
+                            </tr>
+
+                            <!-- sub2 -->
+
+                            <tr>
+                                <td>Subject2 Name </td>
+                                <td>
+                                    <input type="text" class="form-control" id="sub2">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Subject2 Mark Obtained </td>
+                                <td>
+                                    <input type="number" class="form-control" id="sub2_mark">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Subject2 Total Mark </td>
+                                <td>
+                                    <input type="number" class="form-control" id="sub2_total_mark">
+                                </td>
+
+                            </tr>
+
+
+                            <!-- sub3 -->
+
+                            <tr>
+                                <td>Subject3 Name </td>
+                                <td>
+                                    <input type="text" class="form-control" id="sub3">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Subject3 Mark Obtained </td>
+                                <td>
+                                    <input type="number" class="form-control" id="sub3_mark">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Subject3 Total Mark </td>
+                                <td>
+                                    <input type="number" class="form-control" id="sub3_total_mark">
+                                </td>
+
+                            </tr>
+
+
+                            <!-- sub4 -->
+                            <tr>
+                                <td>Subject4 Name </td>
+                                <td>
+                                    <input type="text" class="form-control" id="sub4">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Subject4 Mark Obtained </td>
+                                <td>
+                                    <input type="number" class="form-control" id="sub4_mark">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Subject4 Total Mark </td>
+                                <td>
+                                    <input type="number" class="form-control" id="sub4_total_mark">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-block" onclick="generateMarkList()">Generat
+                                        Mark List</button>
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- generate mark list -->
+    <div class="container-fluid h-100" style="background-color: #c5cae9">
+
+        <div class="row justify-content-left align-items-left h-100 pt-5 ml-1">
+
+
+
+            <div class="col col-sm-6 col-md-10 col-lg-8 col-xl-6" id="result-div">
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
