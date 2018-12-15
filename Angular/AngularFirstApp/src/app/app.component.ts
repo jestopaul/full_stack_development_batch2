@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {NgForm} from '@angular/forms';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +15,9 @@ export class AppComponent {
   microsoft:string = "MICROSOFT";
 
   status:boolean = false;
+
+  name:string="" ;
+  rollNo:number;
 
   constructor()
   {
@@ -31,6 +36,21 @@ export class AppComponent {
   //callback are easy like setTimeOut()
   clickMe=()=>{
     this.status = false;
+  }
+
+  onSubmit(form:NgForm)
+  {
+
+    console.log(form.value.getName);
+
+    this.name = form.value.getName;
+    console.log(form.value.getNumber)
+    this.rollNo = form.value.getNumber;
+
+    console.log(this.name);
+    console.log(this.rollNo);
+
+  
   }
 
   
