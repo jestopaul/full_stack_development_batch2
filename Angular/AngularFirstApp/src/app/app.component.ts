@@ -18,6 +18,7 @@ export class AppComponent {
 
   name:string="" ;
   rollNo:number;
+  bbb;
 
   constructor()
   {
