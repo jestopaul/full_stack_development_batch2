@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<app-nav-bar></app-nav-bar>
+<!-- <app-nav-bar></app-nav-bar> -->
 
 <div class="container">
 
@@ -25,6 +25,8 @@
           <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
         </li>
       </ul>
+
+      
 
       <!-- interpolation -->
 
@@ -64,8 +66,17 @@ also we use in property binding using innerText property-->
           <button type="submit" class="btn btn-primary btn-block">Submit</button>
         </form>
 
+
+        <!-- below is display in same component -->
         <h3>{{name}}</h3>
         <h3>{{rollNo}}</h3>
+
+
+        <!-- below is display in another component by passing values using @Input() decorator -->
+        <app-display  [na]="name"
+        [rNo] ="rollNo">
+         
+        </app-display>
       </div>
     </div>
   </div>

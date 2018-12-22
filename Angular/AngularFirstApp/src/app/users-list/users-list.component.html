@@ -1,0 +1,31 @@
+<!--
+   <div class="card">
+  <h5 class="card-header">Featured</h5>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    
+  </div>
+</div>
+ -->
+
+ <div *ngFor = "let users of fetchDatas">
+   <br>
+  <div class="card">
+    <h5 class="card-header">Id : {{users.id}}</h5>
+    <div class="card-body">
+      <h5 class="card-title">Name : {{users.name}}</h5>
+      <p class="card-text">User Name : {{users.username}}</p>
+      <p class="card-text">Email : {{users.email}}</p>
+      <h6 class="card-title">ADDRESS : </h6>
+      <p class="card-text">Street : {{users.address.street}}, City : {{users.address.city}}</p>
+      <p class="card-text">Phone : {{users.phone}}</p>
+      <p class="card-text">Website : {{users.website}}</p>
+      <a href="#" class="btn btn-primary">Add Friend</a>
+      
+      <button class="btn btn-dark">Cancel Request</button>
+    </div>
+  </div>
+
+ </div>
+
