@@ -20,6 +20,8 @@ app.get('/abouts',(req,res)=>{
     res.send('About Page Loading');
 });
 
+
+
 app.get('/getUsers',(req,res)=>{
     res.send(
         {
@@ -61,7 +63,7 @@ console.log('server running on http://localhost:3000');
 
 
 //view engine added , hbs engine added
-const hbs = require('hbs');
+const hbs = require('hbs');//this is using without angular
 app.set('view engine','hbs');
 
 
