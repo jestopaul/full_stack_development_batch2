@@ -14,6 +14,9 @@ var {mongoose} = require('./mongoose_db');
 var app = express();
 app.use(bodyParser.json());
 
+
+// insert query if we need to insert data in time run time like admin data
+
 // For CORS,Pgm Line no 12 to 29
 app.use(function (req, res, next) {
 

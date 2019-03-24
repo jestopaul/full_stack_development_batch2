@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script >
+        function myFn(){
+            console.log(111);
+alert("call");
+        }
+
+
+        function submit()
+        {
+            //1
+            // document.write(document.getElementById('username').value);
+            // console.log((110).toString(2));
+
+            //2
+            // var a =20;
+            // alert(a);
+            // alert(b);
+            // alert(a);
+            // var b=10;
+
+            //3
+//  var a = 1;
+//  alert(a);
+//  if(true)
+//  {
+//      var a;
+//      alert(a);
+//      a=2;
+
+//  }
+//  alert(a);
+
+//4
+var myarr = [3,16,2,18];
+function my(ele)
+{
+    return (ele+5);
+}
+ document.write(myarr.map(my));
+        }
+    </script>
+</head>
+<body>
+   
+    <input type="text" name="name" id="username">
+
+    <input type="button" value="submit" onclick="submit()">
+    <!-- //<img src="https://wallpaperbrowse.com/media/images/pexels-photo-248797.jpeg"  onabort="myFn()" alt="" sizes="" srcset=""> -->
+</body>
+</html>

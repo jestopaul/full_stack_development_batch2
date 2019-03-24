@@ -10,7 +10,7 @@ var Users = mongoose.model('Users',{
     name:{
 
         type:String,
-        require:true//mandatory
+        require:true//mandatory, validation we can add here like:length,start no
     },
     age:{
         type:Number
